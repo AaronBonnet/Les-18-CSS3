@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('afbeeldingen/roelof.jpg');
+    color: white;
+    text-align: center;
+    padding: 160px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.feiten {
+    flex: 2;
+    list-style: none;
+    padding: 0;
+}
+
+.feiten ul {
+    padding-left: 20px;
+}
+
+.toerisme {
+    flex: 9;
+    background-color: #f0f0f0;
+}
+
+.attractie {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.attractie p {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.attractie img {
+    width: 100px;
+    height: auto;
+    flex: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .attractie {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .attractie img {
+        margin-top: 10px;
+        margin-right: 0;
+        width: 100%;
+    }
+}
